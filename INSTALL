@@ -1,0 +1,53 @@
+xCal Xoops Module Install Instructions
+-----------------------------------------------------------
+
+This is the first release of xCal - the Xoops port of 
+phpicalendar.  There are many more features in the works for
+this module.  
+
+To see the current development roadmap go to:
+http://ackbarr.greatweb.com/xoops2/modules/newbb/viewtopic.php?topic_id=2&forum=3
+
+Installation Instructions
+-----------------------------------------------------------
+To install this module extract the zip file to your /modules/
+directory.  Change permissions on /modules/xCal/cache/ to '777'
+on Unix servers and 'Full Control' to the Apache user on Windows 
+servers. Then, login to your Xoops Control Panel and install the module
+in "System" -> "Modules".
+
+Configuring xCal
+----------------------------------------------------------
+Most of xCal's settings can be modified directly from the Xoops
+control panel.  If your calendar was published using a different
+zimezone than your web server, you can offset the time by 
+changing the 'Calendar Timezone' field to reflect the proper
+timezone.  A complete list of valid timezones are found in TIMEZONES
+
+Publishing your calendar
+----------------------------------------------------------
+xCal is not a web calendar application, it is an iCal (.ics) calendar 
+file viewer.  The calendar needs to be published into iCal format 
+and uploaded to the /modules/xCal/calendars/ folder.  There are 
+several applications that can create valid ICS files, including:
+
+Mozilla Calendar (Windows, Unix)
+Apple iCal       (Mac OS X)
+Ximian Evolution (Unix)
+
+Once the calendar has been created in iCal format, upload the
+calendar file to the /modules/xCal/calendars/ folder.
+
+Feature Requests / Bug Fixes
+---------------------------------------------------------
+If you encounter a bug with xCal, please describe the bug and
+how to duplicate it in the forum on:
+http://ackbarr.greatweb.com/xoops2/
+
+Please do not contact me about adding an event add/edit/delete 
+function to xCal.  I have future plans for implementing this, 
+but have no idea how long that would take to complete.
+
+If someone else would like to donate time/code to do so, feel free.
+
+
